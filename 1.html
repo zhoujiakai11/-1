@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{border: 1px solid brown;
+            border-collapse: separate;
+        border-spacing: 26px;}
+        th,td{padding: 20px;text-align: center;}
+        td{column-span: all;}
+    </style>
+</head>
+<body>
+<span>123</span>
+<p>456</p>
+<p>789 <br>10</p>
+<pre>
+    hangzhou
+    dianzi
+    keji
+    unniversity
+</pre>
+<b>123</b>
+<strong>123</strong>
+<i>123</i>
+<em>123</em>
+<small>123</small>
+<del>123</del>
+<ins>123</ins>
+<sub>123</sub>
+<sup>123</sup>
+<address>zhejiang provice <br>hangzhou
+</address>
+<bdo dir="rtl">this text will be written from right to left</bdo>
+<p dir="rtl">this text will be written from right to left</p>
+<blockquote>12345678</blockquote>
+<cite>the scream</cite><br>
+<q>build a future where people live in harmony with nature</q>
+<dl>
+    <dt>coffee</dt>
+    <dd>hot</dd>
+    <dt>tea</dt>
+    <dd>green</dd>
+    <dd>red</dd>
+    <dd>hot</dd>
+</dl>
+    <a href="httP://www.baidu.com">baidu
+    </a>
+<details>
+    <summary>细节</summary>
+<ul>
+    <li>1</li>
+    <li>2</li>
+</ul></details>
+<a href="http://www.baidu.com" style="color: red;background-color: rgb(15, 174, 174);">link</a>
+<h1 style="border: 12px; font-size: 48px; background-color: bisque; text-align: center; ">hello</h1>
+<h1>my <span style="background-color: red;"> important</span> heading</h1>
+<iframe src="http://www.w3cshchool.com" frameborder="2" name="a frame"></iframe>
+<a href="first page.html" target="a frame">first page</a>
+<p>this is a paragragh <img src="E:/YR2/daily/mixd/R-C.jpg" alt="picture"></p>
+<audio src="E:/YR2/daily/mixd/your name.mp3"></audio>
+<p>2023/3/31</p>
+<progress value="20" max="200"></progress>
+<table width="100%" >
+    <caption>register info</caption>
+    <tr>
+        <th>name</th>
+        <thc >gender</th>
+        <th colspan="2">tel</th>
+    </tr>
+    <tr>
+        <td>icy</td>
+        <td>female</td>
+        <td>1008611</td>
+        <td>10086</td>
+    </tr>
+    <tr>
+        <td>amy</td>
+        <td>male</td>
+        <td>10001</td>
+        <td>100011</td>
+    </tr>
+</table>
+
+<table>
+        <tr>
+            <th>name</th>
+            <td>gate</td>
+            </tr>
+            <tr>
+                <th rowspan="2">telephone</th>
+                <td>1</td>
+            </tr>
+        <tr>
+                <th>1</th>
+            </tr>
+        </table>
+
+<form action="" style="border: 2px solid;">
+       name:<input type="text" name="name" placeholder="输入姓名">
+       gender: <input type="text" name="gender" placeholder="输入性别">
+       password: <input type="password">
+       <br>
+       gender:
+    <br>
+    <input type="radio" name="gender" value="女" checked>female
+    <input type="radio" name="gender" value="男">male
+   <br> hobby
+    <br>
+    <input type="checkbox" name="hobby" value="reading" checked>reading
+    <br>
+    <input type="checkbox" name="hobby" value="jogging">jogging 
+    <br>
+    <input type="checkbox" name="hobby" value="jumpping">jumpping
+<br>
+birthday:
+<br>
+<input type="date" name="birthday">
+<br>
+<input type="range" min="0" max="100" name="power" step="10" list="powers" value="0">
+<datalist id="powers">
+    <option value="0">
+    <option value="10">
+    <option value="20">
+    <option value="30">
+    <option value="40">
+    <option value="50">
+    <option value="60">
+    <option value="70">
+    <option value="80">
+    <option value="90">
+    <option value="100">
+    </datalist>
+<br>
+<input type="submit" value="submit" name="email">
+<br>
+<input type="email" name="email">
+<br>
+<input type="tel" name="phone" pattern="[1]{1}-[0-9]{10}">
+<br>
+<input type="number" name="quantity" min="1" max="5">
+<br>
+<select name="cars" id="cars" size="3">
+    <optgroup label="外国车">
+        <option value="bwm">bwm</option>
+        <option value="2">2</option> 
+        <option value="3">3</option> 
+    </optgroup>
+    <optgroup label="中国车">
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </optgroup>
+</select>
+<br>
+<textarea name="" id="" cols="30" rows="10"></textarea>
+</form>
+</body>
+</html>
