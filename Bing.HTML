@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float: left;
+            width: 10%;
+            position: relative;
+            top: 5px;
+        
+        }
+        .video{
+            position: absolute;
+            top: 0px; left: 0px;
+            z-index: -1;
+        }
+
+       .leader{
+        float: left;
+       }
+
+        ul{
+            color: aliceblue;
+            list-style-type: none;
+            display: block;
+            margin: 10px;
+            padding-top: 16px;
+            position: absolute;
+        }
+
+        li{
+            float: left;
+            margin: 5px;
+            
+        }
+
+        li:hover{
+            color: aqua;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color: rgb(255, 255, 255);
+            width: 80px ;
+            text-align: center;
+            border-radius: 5px;
+            left: 105px;
+            top: 30px;
+        }
+
+        .dropdown-content a:hover{
+            background-color: antiquewhite;
+        }
+
+        .more:hover .dropdown-content{
+            display: block;
+        }
+
+        .search{
+            position: absolute;
+            top: 300px;left: 680px;
+            
+        }
+        button{
+            position: relative;
+            top:5px;left: 20px;
+            border-radius: 50px;
+        }
+        input[type=text]{
+            width: 100px;
+            text-align: center;
+            padding: 5px;
+            margin: auto;
+            box-sizing: border-box;
+            border: 2px solid;
+            border-radius: 15px;
+            background-image: url('放大镜.jpg');
+            background-position: left top;
+            background-size: contain;
+            background-repeat: no-repeat; 
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:hover{
+            background-color: antiquewhite;
+            width: 100%;
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="image">
+        <img src="bing.png" alt="bing" >
+    </div>
+    
+    <div class="leader">
+        <ul>
+        <div class="dropdown">
+        <li class="horizon">picture</li>
+        <li class="horizon">video </li>
+        <li class="more">more
+            <ul class="dropdown-content">
+                <li class="ver"><a href="#">map</a></li>
+                <li class="ver"><a href="#">news</a></li>
+            </ul>
+        </li>
+        </div>
+        </ul>
+    </div>
+
+    <div class="search" id="search">
+        <form action="">
+            <input type="text">
+        </form>
+        <button>search</button>
+    </div>
+    <div class="video">
+        <video src="C0097.MP4" width="100%"></video>
+    </div>
+
+
+</body>
+</html>
